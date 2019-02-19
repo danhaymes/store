@@ -1,0 +1,5 @@
+item1 = {:name => "Peanut Butter", :brand => "Skippy", :price => 3, :size => "16oz"}
+item1 = {:name => "Jelly", :brand => "Smuckers", :price => 2, :size => "12oz"}
+item1 = {:name => "Bread", :brand => "Sara Lee", :price => 5, :size => "regular"}
+
+p " A #{item1[:size]} sized #{item1[:brand]} #{item1[:name]} sells for $#{item1[:price]}"

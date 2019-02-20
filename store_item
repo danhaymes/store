@@ -6,27 +6,14 @@
 
 
 class Item 
+  attr_reader :name, :brand, :price, :size
+  attr_writer :brand
+
   def initialize(input_name, input_brand, input_price, input_size)
     @name = input_name
     @brand = input_brand
     @price = input_price
     @size = input_size
-  end
-
-  def name
-    @name
-  end
-
-  def brand
-    @brand
-  end
-
-  def price
-    @price
-  end
-
-  def size
-    @size
   end
 
   def print_info
@@ -38,3 +25,5 @@ end
 item1 = Item.new("Peanut Butter", "Skippy", 3, "160z")
 p item1
 p item1.print_info
+@brand = "jiffy"
+p @brand

@@ -1,5 +1,40 @@
-item1 = {:name => "Peanut Butter", :brand => "Skippy", :price => 3, :size => "16oz"}
-item1 = {:name => "Jelly", :brand => "Smuckers", :price => 2, :size => "12oz"}
-item1 = {:name => "Bread", :brand => "Sara Lee", :price => 5, :size => "regular"}
+# item1 = {:name => "Peanut Butter", :brand => "Skippy", :price => 3, :size => "16oz"}
+# item1 = {:name => "Jelly", :brand => "Smuckers", :price => 2, :size => "12oz"}
+# item1 = {:name => "Bread", :brand => "Sara Lee", :price => 5, :size => "regular"}
 
-p " A #{item1[:size]} sized #{item1[:brand]} #{item1[:name]} sells for $#{item1[:price]}"
+# p " A #{item1[:size]} sized #{item1[:brand]} #{item1[:name]} sells for $#{item1[:price]}"
+
+
+class Item 
+  def initialize(input_name, input_brand, input_price, input_size)
+    @name = input_name
+    @brand = input_brand
+    @price = input_price
+    @size = input_size
+  end
+
+  def name
+    @name
+  end
+
+  def brand
+    @brand
+  end
+
+  def price
+    @price
+  end
+
+  def size
+    @size
+  end
+
+  def print_info
+    "#{@brand} #{@name} sells for $#{@price}"
+  end
+
+end
+
+item1 = Item.new("Peanut Butter", "Skippy", 3, "160z")
+p item1
+p item1.print_info
